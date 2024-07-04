@@ -1,0 +1,73 @@
+name: StaffX
+version: '1.0-SNAPSHOT'
+main: me.keksiz_.staffx.StaffX
+api-version: '1.20'
+commands:
+  gmc:
+    description: Go to Creative Mode
+    permission: staffx.gamemode.creative
+    permission-message: You don't have permissions to execute this command!
+    usage: /<command> <player (not required)>
+    aliases: gmcreative
+  gms:
+    description: Go to Survival Mode
+    permission: staffx.gamemode.survival
+    permission-message: You don't have permissions to execute this command!
+    usage: /<command> <player (not required)>
+    aliases: gmsurvival
+  gmsp:
+    description: Go to Spectator Mode
+    permission: staffx.gamemode.spectator
+    permission-message: You don't have permissions to execute this command!
+    usage: /<command> <player (not required)>
+    aliases: gmspectator
+  gma:
+    description: Go to Adventure Mode
+    permission: staffx.gamemode.adventure
+    permission-message: You don't have permissions to execute this command!
+    usage: /<command> <player (not required)>
+    aliases: gmadventure
+  vanish:
+    description: Vanishes you or other player
+    permission: staffx.vanish
+    permission-message: You don't have permission to execute this command!
+    usage: /<command>
+  glow:
+    description: Makes you glow
+    permission: staffx.glow
+    permission-message: You don't have permission to execute this command!
+    usage: /<command>
+  broadcast:
+    description: Broadcasts you'r text
+    permission: staffx.broadcast
+    permission-message: You don't have permission to execute this command!
+    usage: /<command>
+  check:
+    description: Check players
+    permission: staffx.check
+    permission-message: You don't have permission to execute this command!
+    usage: /<command> <player>
+  unban:
+    description: Unbans player
+    permission: staffx.unban
+    permission-message: You don't have permission to execute this command!
+    usage: /<command> <player>
+permissions:
+  staffx.gamemode.adventure:
+    description: Allows to execute /gma <player (not required)>
+  staffx.gamemode.creative:
+    description: Allows to execute /gmc <player (not required)>
+  staffx.gamemode.survival:
+    description: Allows to execute /gms <player (not required)>
+  staffx.gamemode.spectator:
+    description: Allows to execute /gmsp <player (not required)>
+  staffx.vanish:
+    description: Allows to be invisible and execute /vanish
+  staffx.check:
+    description: Allows to check players and execute /check <player>
+  staffx.glow:
+    description: Allows to glow and execute /glow
+  staffx.broadcast:
+    description: Allows to broadcast text and execute /broadcast <text>
+  staffx.unban:
+    description: Allows to unban players and execute command /unban <player>
